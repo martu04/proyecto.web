@@ -11,8 +11,10 @@ export class Postre {
     precio: number;
     @Column()
     stock: number;
+    @Column()
+    imagen: string;
     @OneToMany(()=> Receta, (receta)=> receta.postre)
     recetas: Receta[]
     
-}
+} 
 

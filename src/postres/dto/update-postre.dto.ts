@@ -5,4 +5,5 @@ export class UpdatePostreDto {
     nombre: string;
     precio: number;
     stock: number;
+    imagen: string;
 }

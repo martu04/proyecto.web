@@ -16,7 +16,7 @@ export class PostresService {
   }
 
   findAll() {
-    return this.postresRepository.find();
+    return this.postresRepository.find( { relations: { recetas: true }});
   }
 
   async findOne(id: number) {
@@ -35,3 +35,4 @@ export class PostresService {
     await this.postresRepository.delete({ id })
   }
 }
+
