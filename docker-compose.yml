@@ -4,11 +4,21 @@ services:
     image: 'postgres:latest'
     restart: always
     volumes:
-      - './postgres_data:/var/lib/postgresql/data'
+      - 'postgres_data:/var/lib/postgresql/data'
     environment:
-      - POSTGRES_PASSWORD=280404
-      - POSTGRES_USER=pasteleria 
-      - POSTGRES_DB=pasteleria
+      - "POSTGRES_PASSWORD=280404"
+      - "POSTGRES_USER=pasteleria"
+      - "POSTGRES_DB=pasteleria"
     ports:
       - '5432:5432'
+  
+  backend: 
+    build: .
+    ports:
+      - '3000:3000'
+    environment:
+      - DB_HOST=postgres
+
+volumes:
+  postgres_data:
 
