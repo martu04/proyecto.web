@@ -45,7 +45,7 @@ describe('RecetasController', () => {
  
   it('findAll => should return an array of Recetas', async () => {
     const result = await controller.findAll();
-    expect(result).toEqual(8);
+    expect(result).toEqual(mock.recetas);
 });
 
 });
