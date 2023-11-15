@@ -10,6 +10,7 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 [![codecov](https://codecov.io/gh/martu04/proyecto.web/graph/badge.svg?token=1HD0EDM02F)](https://codecov.io/gh/martu04/proyecto.web)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/3a90f660627045ec81d2a6d57c384ff6)](https://app.codacy.com/gh/martu04/proyecto.web/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
 ## Installation
 
