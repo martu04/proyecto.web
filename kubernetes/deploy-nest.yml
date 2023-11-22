@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pasteleria-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pasteleria-backend
+  template:
+    metadata:
+      labels:
+        app: pasteleria-backend
+    spec:
+      containers:
+        - name: pasteleria-backend
+          image: martina004/pasteleria-backend
+          ports:
+            - containerPort: 3000
+          env:
+            - name: DB_HOST
+              value: isabelle.db.elephantsql.com
+            - name: DB_NAME
+              value: jkvhyybr
+            - name: DB_PASSWORD
+              value: 1HK0mHKWX7t4fFpDNb7Dy0Gej2_ZYmdW
+            - name: DB_PORT
+              value: '5432'
+            - name: DB_USER
+              value: jkvhyybr
